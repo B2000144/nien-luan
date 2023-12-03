@@ -46,15 +46,12 @@
                               <div class="grids_in">
                                   <div class="content">
                                       <div class="img-right-pro">
-                                          <a href="sanpham.php">
+                                          <a
+                                              href="<?php echo BASE_URL ?>/sanpham/chitietsanpham/<?php echo $product['id_product'] ?>">
                                               <img class="lazy img-pro content-image"
                                                   src="<?php echo BASE_URL ?>/public/uploads/product/<?php echo $product['image_product'] ?>"
                                                   data-original="image/iphone.png" alt="Máy in Canon MF229DW" />
                                           </a>
-                                          <div class="content-overlay"></div>
-                                          <div class="content-details fadeIn-top">
-                                              <?php echo $product['desc_product'] ?>
-                                          </div>
                                       </div>
                                       <div class="name-pro-right">
                                           <a

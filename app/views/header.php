@@ -33,10 +33,14 @@
      <!--tkw-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:wght@400;600&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+     <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:wght@400;600&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap"
+         rel="stylesheet">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+         type="text/css" />
      <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL ?>/public/css/owl.theme.default.min.css">
      <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL ?>/public/css/product.css">
      <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL ?>/public/css/style.css">
@@ -50,7 +54,9 @@
                  <div class="header_top">
                      <div class="bg_in row d-flex align-items-center">
                          <div class="logo col-md-4">
-                             <a href="<?php echo BASE_URL ?>"><img src="<?php echo BASE_URL ?>/public/images/logohere.png" width="250" height="100" alt="logohere.jpeg" /></a>
+                             <a href="<?php echo BASE_URL ?>"><img
+                                     src="<?php echo BASE_URL ?>/public/images/logohere.png" width="250" height="100"
+                                     alt="logohere.jpeg" /></a>
                          </div>
                          <nav class="menu_top col-md-4">
                              <form autocomplete="off" class="search_form" method="get" action="">
@@ -67,13 +73,13 @@
                                      <?php
                                         if (Session::get('customer') == true) {
                                         ?>
-                                         <a class="text-login" href='<?php echo BASE_URL ?>/khachhang/dangxuat'>Đăng
-                                             xuất</a>
+                                     <a class="text-login" href='<?php echo BASE_URL ?>/khachhang/dangxuat'>Đăng
+                                         xuất</a>
                                      <?php
                                         } else {
                                         ?>
-                                         <a class="text-login" href='<?php echo BASE_URL ?>/khachhang/dangnhap'>Đăng
-                                             nhập</a>
+                                     <a class="text-login" href='<?php echo BASE_URL ?>/khachhang/dangnhap'>Đăng
+                                         nhập</a>
                                      <?php
                                         }
                                         ?>
@@ -106,11 +112,12 @@
                                                  <?php
                                                     foreach ($category as $key => $cate) {
                                                     ?>
-                                                     <li class='active has-sub'>
+                                                 <li class='active has-sub'>
 
-                                                         <a href='<?php echo BASE_URL ?>/sanpham/danhmuc/<?php echo $cate['id_category_product'] ?>'><span><?php echo $cate['title_category_product'] ?></span></a>
+                                                     <a
+                                                         href='<?php echo BASE_URL ?>/sanpham/danhmuc/<?php echo $cate['id_category_product'] ?>'><span><?php echo $cate['title_category_product'] ?></span></a>
 
-                                                     </li>
+                                                 </li>
                                                  <?php
                                                     }
                                                     ?>
@@ -134,12 +141,13 @@
                                              <?php
                                                 foreach ($category as $key => $cate) {
                                                 ?>
-                                                 <li>
+                                             <li>
 
-                                                     <a href='<?php echo BASE_URL ?>/sanpham/danhmuc/<?php echo $cate['id_category_product'] ?>'><span><?php echo $cate['title_category_product'] ?></span></a>
+                                                 <a
+                                                     href='<?php echo BASE_URL ?>/sanpham/danhmuc/<?php echo $cate['id_category_product'] ?>'><span><?php echo $cate['title_category_product'] ?></span></a>
 
 
-                                                 </li>
+                                             </li>
                                              <?php
                                                 }
                                                 ?>
@@ -149,7 +157,6 @@
                                          </ul>
                                      </li>
                                      <li class=''><a href='<?php echo BASE_URL ?>/giohang'>Giỏ hàng</a></li>
-                                     <li class=''><a href='<?php echo BASE_URL ?>/index/lienhe'>Liên hệ</a></li>
                                  </ul>
                              </div>
                          </div>
