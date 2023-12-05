@@ -158,9 +158,6 @@ foreach ($details_product as $key => $value) {
                 <?php
             }
                 ?>
-                <!-- <div class="content-brank">
-                     <p><strong>Apple </strong>tự hảo<strong>&nbsp;</strong>là thương hiệu Việt Nam về sản phẩm tủ rack 19", tủ cửa lưới, tủ treo tường, bảo vệ thiết bị mạng an toàn, dễ dàng quản lý và vận hành.</p>
-                  </div> -->
                 <div class="module_pro_all">
                     <div class="box-title">
                         <div class="title-bar">
@@ -221,38 +218,4 @@ foreach ($details_product as $key => $value) {
         </div>
         <div class="clear"></div>
     </div>
-
-    <script>
-    jQuery(document).ready(function() {
-
-
-
-        var div_fixed = jQuery('.product_detail_info').offset().top;
-
-        jQuery(window).scroll(function() {
-
-            if (jQuery(window).scrollTop() > div_fixed) {
-
-                jQuery('.tabs-animation').addClass('fix_top');
-
-            } else {
-
-                jQuery('.tabs-animation').removeClass('fix_top');
-
-            }
-
-        });
-
-        jQuery(window).load(function() {
-
-            if (jQuery(window).scrollTop() > div_fixed) {
-
-                jQuery('.tabs-animation').addClass('fix_top');
-
-            }
-
-        });
-
-    });
-    </script>
 </section>

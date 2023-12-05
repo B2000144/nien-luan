@@ -26,30 +26,39 @@
                     <?php
                     foreach ($list_product as $key => $product) {
                     ?>
-                        <div class="grids grids-list-product">
-                            <div class="grids_in">
-                                <div class="content">
-                                    <div class="img-right-pro">
-                                        <a href="<?php echo BASE_URL ?>/sanpham/chitietsanpham/<?php echo $pro_cate['id_product'] ?>">
-                                            <img class="lazy img-pro content-image" src="<?php echo BASE_URL ?>/public/uploads/product/<?php echo $product['image_product'] ?>" />
-                                        </a>
-                                    </div>
-                                    <div class="name-pro-right">
-                                        <a href="<?php echo BASE_URL ?>/sanpham/chitietsanpham/<?php echo $pro_cate['id_product'] ?>">
-                                            <h3> <?php echo $product['title_product'] ?></h3>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <input type="submit" style="box-shadow: none" class="add_card" name="addcart" value="Đặt hàng">
-                                    </div>
-                                    <div class="price_old_new">
-                                        <div class="price">
-                                            <span class="news_price"><?php echo number_format($product['price_product'], 0, ',', '.') . 'đ' ?></span>
+                        <form action="<?php echo BASE_URL ?>/giohang/themgiohang" method="POST">
+
+                            <input type="hidden" value="<?php echo $product['id_product'] ?>" name="product_id">
+                            <input type="hidden" value="<?php echo $product['title_product'] ?>" name="product_title">
+                            <input type="hidden" value="<?php echo $product['image_product'] ?>" name="product_image">
+                            <input type="hidden" value="<?php echo $product['price_product'] ?>" name="product_price">
+                            <input type="hidden" value="1" name="product_quantity">
+                            <div class="grids grids-list-product">
+                                <div class="grids_in">
+                                    <div class="content">
+                                        <div class="img-right-pro">
+                                            <a href="<?php echo BASE_URL ?>/sanpham/chitietsanpham/<?php echo $product['id_product'] ?>">
+                                                <img class="lazy img-pro content-image" src="<?php echo BASE_URL ?>/public/uploads/product/<?php echo $product['image_product'] ?>" />
+                                            </a>
+
+                                        </div>
+                                        <div class="name-pro-right">
+                                            <a href="<?php echo BASE_URL ?>/sanpham/chitietsanpham/<?php echo $product['id_product'] ?>">
+                                                <h3> <?php echo $product['title_product'] ?></h3>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <input type="submit" style="box-shadow: none" class="add_card" name="addcart" value="Thêm vào giỏ">
+                                        </div>
+                                        <div class="price_old_new">
+                                            <div class="price">
+                                                <span class="news_price"><?php echo number_format($product['price_product'], 0, ',', '.') . 'đ' ?></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     <?php
                     }
                     ?>
